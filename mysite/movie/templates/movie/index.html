@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+     </head>
+     <body>
+        <strong>List of all poster</strong><br>
+        {% for i in response %}
+        <img src=`https://www.themoviedb.org/t/p/w220_and_h330_face{{i.poster_path}}`>
+        {% endfor %}
+     </body>
+
+</html>
